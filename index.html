@@ -10,24 +10,25 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <title>Responsive</title>
 </head>
-<body>
+<body class="text-light ">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark background-nav fixed-top">
-        <a class="navbar-brand name-text  font-weight-bolder text-light" id="nav-heading" href="#">Meghasumanth</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse background-c" id="navbarNavAltMarkup">
-          <div class="navbar-nav ml-auto mr-5 ">
-            <a class="nav-item nav-link active text-link font-weight-bold text-light" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link text-link font-weight-bold text-light" href="#about">About</a>
-            <a class="nav-item nav-link text-link font-weight-bold text-light" href="#bio">Bio</a>
-            <a class="nav-item nav-link text-link font-weight-bold text-light" href="#skills">Skills</a>
-            <a class="nav-item nav-link text-link font-weight-bold text-light" href="#crts">Certifications</a>
-            <a class="nav-item nav-link text-link font-weight-bold text-light" href="#contact">Contact</a>
-          </div>
+        <div class="container-fluid">
+            <a class="navbar-brand name-text  font-weight-bolder text-light" id="nav-heading" href="#">Meghasumanth</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse background-c" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto mr-5 ">
+                <a class="nav-item nav-link active text-link font-weight-bold text-light" href="#about">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link text-link font-weight-bold text-light" href="#bio">About</a>
+                <a class="nav-item nav-link text-link font-weight-bold text-light" href="#skills">Skills</a>
+                <a class="nav-item nav-link text-link font-weight-bold text-light" href="#crts">Certifications</a>
+                <a class="nav-item nav-link text-link font-weight-bold text-light" href="#contact">Contact</a>
+            </div>
+            </div>
         </div>
       </nav>
-      <!-- <div class="dummy"></div> -->
+      <div id="dummy"></div>
     <div id="about">
         <div class="container-fluid">
             <div class="row">
@@ -67,27 +68,38 @@
             <div class="row justify-content-center">
                     <div class="col-4 col-lg-2">
                         <div class="tech-skills">
-                            <div class=" python bg-dark text-light"><span id="span">Python</span></div>
+                            <div class=" python bg-dark text-light"><span id="span" class="text-warning">70%</span></div>
+                            <p class="text-center text-warning" id="p-size">Python</p>
                         </div>
                     </div>
                     <div class="col-4 col-lg-2">
                         <div class="tech-skills">
-                            <div class=" python html bg-dark text-light"><span id="span">HTML</span></div>
+                            <div class=" python html bg-dark text-light"><span id="span" class="text-success">80%</span></div>
+                            <p class="text-center text-success" id="p-size">HTML</p>
                         </div>
                     </div>
                     <div class="col-4 col-lg-2">
                         <div class="tech-skills">
-                            <div class=" python css bg-dark text-light"><span id="span">CSS</span></div>
+                            <div class=" python css bg-dark text-light"><span id="span" class="text-warning">70%</span></div>
+                            <p class="text-center text-warning" id="p-size">CSS</p>
                         </div>
                     </div>
                     <div class="col-4 col-lg-2">
                         <div class="tech-skills">
-                            <div class=" python sql bg-dark text-light"><span id="span">SQL</span></div>
+                            <div class=" python sql bg-dark text-light"><span id="span" class="text-warning">75%</span></div>
+                            <p class="text-center text-warning" id="p-size">SQL</p>
                         </div>
                     </div>
                     <div class="col-4 col-lg-2 ">
                         <div class="tech-skills">
-                            <div class=" python react bg-dark text-light"><span id="span">REACTJS</span></div>
+                            <div class=" python react bg-dark text-light"><span id="span" class="text-primary">60%</span></div>
+                            <p class="text-center text-primary" id="p-size">ReactJs</p>
+                        </div>
+                    </div>
+                    <div class="col-4 col-lg-2 ">
+                        <div class="tech-skills">
+                            <div class=" python  rbs bg-dark text-light"><span id="span" class="text-success">80%</span></div>
+                            <p class="text-center text-success" id="p-size">Bootstrap</p>
                         </div>
                     </div>
             </div>
@@ -96,7 +108,7 @@
        
     </div>
 
-    <div id="crts"><h1 class="text-center">MY Certifications</h1></div>
+    <div id="crts"><h1 class="text-center c-title">MY Certifications</h1></div>
     <div class="container-fluid mt-5">
         <div class="row justify-content-center projects-container">
             <div class="col-12 col-lg-2 project-card pc1 d-flex flex-column justify-content-center">
@@ -124,6 +136,45 @@
                     <a href="fsd.html" class="text-light"><h3 class="text-center">MERNSTACK Development</h3></a><br>
                     <p class="text-left">This is also an Internship program from the IIDT for the duration of 4-months.</p>
                 </div>
+            </div>
+        </div>
+        <h5 id="h5" class="text-center m-5  text-gray ">The above mention courses certifications are truly done by me. <strong class="text-white"><i>Click On Card For More Details</i></strong></h5>
+    </div>
+    <div id="contact"><h1 class="text-center c-title">Contact Me</h1></div>
+    <div class="container contact-container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="5655da55-cc3d-487d-a653-2264121f2625">
+                    <div class="fg d-flex flex-column">
+                        <label class="label">Name</label>
+                        <input type="text" class="transparent" placeholder="Enter Your Name">
+                    </div>
+                    <div class="fg d-flex flex-column">
+                        <label class="label">Email</label>
+                        <input type="email" class="transparent" placeholder="example@gmail.com">
+                    </div>
+                    <div class="fg d-flex flex-column">
+                        <label class="label">What You want to know more from me?</label>
+                        <textarea class=" transparent" rows="3"></textarea>
+                    </div>
+                    <!-- <div class="form-group">
+                      <label for="exampleFormControlInput1">Name</label>
+                      <input type="text" class="form-control transparent" id="exampleFormControlInput1" placeholder="Enter Your Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Email</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">What You want to know more from me?</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div> -->
+                    <div class="text-center mt-5">
+                        <button class="btn btn-outline-info pl-5 pr-5 pt-3 pb-3 button" type="submit">Send </button>
+                    </div>
+                    
+                  </form>
             </div>
         </div>
     </div>
