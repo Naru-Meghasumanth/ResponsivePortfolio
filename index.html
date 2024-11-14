@@ -8,10 +8,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
     <title>Naru_Meghasumanth</title>
 </head>
 <body class="text-light ">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark background-nav fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg background-nav fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand name-text  font-weight-bolder text-light" id="nav-heading" href="#">Meghasumanth</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,21 +30,21 @@
         </div>
       </nav>
       <div id="dummy"></div>
-    <div id="about">
+    <div id="about" class="d-flex flex-column justify-content-center">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-lg-12 text-center about-text">
-                    <h1 class="about-heading">Hello-Recruiter</h1>
+                    <h1 class="about-heading text font-weight-bold">Hello-Recruiter</h1>
                     <div>
-                        <p >I wanted to take a moment to extend my warmest greetings and express my sincere gratitude for the opportunity you've given<br> me to interview for the role in your Company. It was truly a pleasure meeting with you and discussing the exciting prospects within your organization.</p>
+                        <p class="text-dark" >I wanted to take a moment to extend my warmest greetings and express my sincere gratitude for the opportunity you've given<br> me to interview for the role in your Company. It was truly a pleasure meeting with you and discussing the exciting prospects within your organization.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="bio" class="about-heading">
+    <div id="bio" class="d-flex flex-column justify-content-center">
         <div class="container-fluid">
-            <h1 class="text-center " >About Me</h1>
+            <h1 class="text-center aboutme">About Me</h1>
             <div class="row">
                     <div class="col-11 col-lg-4">
                         <div class="d-flex flex-row justify-content-center pt-4 pb-4">
@@ -55,15 +56,15 @@
                             <p>Currently I'm an fresher, recently completed my graduation under the stream of COMPUTER SCIENCE ENGINEERING on GEETHANJALI INSTITUTE OF SCINECE AND TECHNOLOGY.<br>
                             In the way of searching an great organization to start my journy of new life, I found your organization and your organization is very suites to me and my skills.<br>
                             </p><br>
-                            <button class="btn btn-primary">Download My Resume</button>
+                            <button class="btn btn-outline-primary download-btn"><a href="Naru Meghasumanth.pdf">Download My Resume</a></button>
                         </div>
                     </div>
             </div>
         </div>
     </div>
     
-    <div id="skills">
-        <h1 class="text-center skills-heading">Skills That I Learned</h1>
+    <div id="skills" class="d-flex flex-column justify-content-center">
+        <h1 class="text-center text skills-heading">Skills That I Learned</h1>
         <div class="container">
             <div class="row justify-content-center">
                     <div class="col-4 col-lg-2">
@@ -108,76 +109,204 @@
        
     </div>
 
-    <div id="crts"><h1 class="text-center c-title">MY Certifications</h1></div>
+    <div id="crts" class="crts d-flex flex-column justify-content-center">
+        <h1 class="text-center text-cert c-title">My Certifications</h1>
     <div class="container-fluid mt-5">
         <div class="row justify-content-center projects-container">
             <div class="col-12 col-lg-2 project-card pc1 d-flex flex-column justify-content-center">
                 <div class="project-discription-card1 pdc text-light pl-4 pr-4 pt-2 pb-2">
-                    <a href="cs.html" class="text-light"><h3 class="text-center">CyberSecurity</h3></a>
-                    <p class="text-left">This is an AICTE Certified course, i done this course in my 2-2 semisster.
+                    <!-- Button trigger modal -->
+                    <div class="text-center ">
+                         <button type="button" id="button"  class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                             CyberSecurity
+                         </button>
+                    </div>                    
+                    <!-- Modal -->
+                    <div class="modal fade " id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h3 class="modal-title text-dark" id="exampleModalLongTitle">CyberSecurity Certification</h3>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="w-100" src="cs.png" />
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <p class="text-left c-text">This is an AICTE Certified course, i done this course in my 2-2 semisster.
                         In this i learned FUNDAMENTALS OF CYBERSECURITY
                     </p>
                 </div>
             </div>
             <div class="col-12 col-lg-2 project-card pc2 image2 d-flex flex-column justify-content-center">
                 <div class="project-discription-card2 pdc  text-light pl-4 pr-4 pt-2 pb-2">
-                    <a href="jfd.html" class="text-light"><h3 class="text-center">Java FullStack Development</h3></a><br>
-                    <p class="text-left">Through the ConsensusAcademy team i completed this training for the period of 2 months.</p>
+                    <div class="text-center ">
+                        <button type="button" id="button" class="btn btn-danger mb-4" data-toggle="modal" data-target=".bd-example-modal-lg">
+                            Java FullStack Development
+                        </button>
+                   </div>                    
+                   <!-- Modal -->
+                   <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                      <div class="modal-content img">
+                        <div class="modal-header">
+                            <h3 class="modal-title text-dark" id="exampleModalLongTitle">Java_Fullstack Certification</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="w-100" src="JFD_CETI.jpg" />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    <p class="text-left c-text">Through the ConsensusAcademy team i completed this training for the period of 2 months.</p>
                 </div>
             </div>
             <div class="col-12 col-lg-2 project-card pc3 image3 d-flex flex-column justify-content-center">
                 <div class="project-discription-card3 pdc text-light pl-4 pr-4 pt-2 pb-2">
-                    <a href="jse.html" class="text-light"><h3 class="text-center">JavaScript Essentials</h3></a><br>
-                    <p class="text-left">This an Internship program that i got from the CISCO NETCAD ACADEMY for the duration of 2 months.</p>
+                    <div class="text-center">
+                        <button type="button" id="button" class="btn btn-success mb-4" data-toggle="modal" data-target=".bd-example-modal-sm">JavaScript Essentials</button>
+                    </div>
+
+                    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-md">
+                        <div class="modal-content text-center">
+                            <div class="modal-header">
+                                <h3 class="modal-title text-dark" id="exampleModalLongTitle">JavaScript Essentials Certification</h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h3 class="text-dark">imageNotFound</h3>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    </div>
+                    <p class="text-left c-text">This an Internship program that i got from the CISCO NETCAD ACADEMY for the duration of 2 months.</p>
                 </div>
             </div>
             <div class="col-12 col-lg-2 project-card pc4 image4 d-flex flex-column justify-content-center">
                 <div class="project-discription-card4 pdc  text-light pl-4 pr-4 pt-2 pb-2">
-                    <a href="fsd.html" class="text-light"><h3 class="text-center">MERNSTACK Development</h3></a><br>
-                    <p class="text-left">This is also an Internship program from the IIDT for the duration of 4-months.</p>
+                    <!-- Button trigger modal -->
+                    <div class="text-center">
+                        <button type="button" id="button" class="btn btn-warning text-light mb-4" data-toggle="modal" data-target="#exampleModalLong">
+                            MERNStack Development
+                        </button>
+                    </div>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h3 class="modal-title text-dark" id="exampleModalLongTitle">MERN_Stack Certification</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="w-100" src="fsd.png" />
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <p class="text-left c-text">This is also an Internship program from the IIDT for the duration of 4-months.</p>
                 </div>
             </div>
         </div>
-        <h5 id="h5" class="text-center m-5  text-gray ">The above mention courses certifications are truly done by me. <strong class="text-white"><i>Click On Card For More Details</i></strong></h5>
+        <h5 id="h5" class="text-center m-5  text-gray ">The above mention courses certifications are truly done by me. <strong class="text-info"><i>Click On Card For More Details</i></strong></h5>
     </div>
-    <div id="contact"><h1 class="text-center c-title">Contact Me</h1></div>
-    <div class="container contact-container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-6">
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="5655da55-cc3d-487d-a653-2264121f2625">
-                    <div class="fg d-flex flex-column">
-                        <label class="label">Name</label>
-                        <input type="text" class="transparent" name="name" placeholder="Enter Your Name">
-                    </div>
-                    <div class="fg d-flex flex-column">
-                        <label class="label">Email</label>
-                        <input type="email" class="transparent" name="email" placeholder="example@gmail.com">
-                    </div>
-                    <div class="fg d-flex flex-column">
-                        <label class="label">What You want to know more from me?</label>
-                        <textarea class="transparent" rows="3"></textarea>
-                    </div>
-                    <!-- <div class="form-group">
-                      <label for="exampleFormControlInput1">Name</label>
-                      <input type="text" class="form-control transparent" id="exampleFormControlInput1" placeholder="Enter Your Name">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleFormControlInput1">Email</label>
-                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleFormControlTextarea1">What You want to know more from me?</label>
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div> -->
-                    <div class="text-center mt-5">
-                        <button class="btn btn-outline-info pl-5 pr-5 pt-3 pb-3" type="submit">Send </button>
-                    </div>
-                    
-                  </form>
+    </div>
+
+    <div id="contact" class="d-flex flex-column justify-content-center">
+        <h1 class="text-center c-title text-contact">Contact Me</h1>
+        <div class="container contact-container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="5655da55-cc3d-487d-a653-2264121f2625">
+                        <div class="fg d-flex flex-column">
+                            <label class="label text-secondary">Name</label>
+                            <input type="text" class="transparent" name="name" placeholder="Enter Your Name">
+                        </div>
+                        <div class="fg d-flex flex-column">
+                            <label class="label text-secondary">Email</label>
+                            <input type="email" class="transparent" name="email" placeholder="example@gmail.com">
+                        </div>
+                        <div class="fg d-flex flex-column">
+                            <label class="label text-secondary">What You want to know more from me?</label>
+                            <textarea class="transparent" rows="3"></textarea>
+                        </div>
+                        <div class="text-center mt-5">
+                            <button class="btn btn-outline-info pl-5 pr-5 pt-3 pb-3" type="submit">Send </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
+    <div id="contacts-list" class="d-flex flex-column justify-content-center">
+        <div class="container-fluid ml-5 mr-5 ml-md-0 mr-md-0 ">
+            <div class="row">
+                <div class="col-12 col-md-6 pt-5 pl-2 pr-2 pd-5">
+                    <div class=" text-center text-md-center">
+                        <img class="image " src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-logo-img.png" alt="" />
+                    </div> 
+                    <div class="icons-card text-md-left text-center text-md-center mt-2 pt-2">
+                        <a href="https://github.com/sumanth14333"><i class="fa-brands fa-github c-links  icon"></i></a>
+                        <a href="https://www.hackerrank.com/profile/nmegasumanth"><i class="fa-brands fa-hackerrank c-links  icon"></i></a>
+                        <a href="https://www.instagram.com/sumanth10328/profilecard/?igsh=aDVhd3BwejN3YWxh"><i class="fa-brands fa-instagram c-links  icon"></i></a>
+                        <a href="https://www.linkedin.com/in/narumeghasumanth"><i class="fa-brands fa-linkedin c-links  icon"></i></a>
+                        <p class="mt-3 c-links ">BuchiReddyPalem, Nellore, AndhraPradesh, India.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mt-md-5">
+                    <p class="text font-weight-bold">Contact Us</p>
+                    <div class="d-flex flex-row c-links ">
+                        <i class="c-icon mt-2 mr-2 fa-solid fa-envelope c-links "></i>
+                        <p class="c-links">nmegasumanth@gmail.com</p>
+                    </div>
+                    <div class="d-flex flex-row  ">
+                        <i class="c-icon mt-2 mr-2 fa-solid fa-phone c-links "></i>
+                        <p class="c-links">7995988588</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mt-md-5">
+                    <p class="text font-weight-bold"></p>
+                    <div class="d-flex flex-row ">
+                        <p class="c-links">Avalability</p>
+                    </div>
+                    <div class="d-flex flex-row ">
+                        <p class="c-links">Alway there to help others</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr">
+            <p class="text-center c-links"><span class="c-links">&copy</span> 2024 by Meghasumanth. Created with Bootstrap. </p>
+        </div>
+
+    </div>
+
     <div class="dummy"></div>
 </body>
 </html>

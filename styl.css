@@ -1,9 +1,25 @@
+@import url('https://fonts.cdnfonts.com/css/cocosolddb');
 *{
     margin: 0;
     padding: 0;
+    /* font-family: cursive;  #F1F1F2*/
+    font-family: 'CocosOldDB', sans-serif;
 }
 body{
-    background-color: #222b36 !important;
+    background: #F1F1F2!important;
+    
+}
+.bg{
+    background-color: #375E97;
+}
+.c-text{
+    color: rgb(229, 236, 242);
+}
+.text{
+    color: #002C54,;
+}
+.text-color{
+    color: rgba(30, 62, 98, 0.375) !important;
 }
 
 .text-link{
@@ -33,6 +49,7 @@ body{
 }
 .about-heading{
     margin-top: 150px;
+    
 }
 #bio{
     margin: 180px 0;
@@ -41,8 +58,9 @@ body{
     font-size: 40px;
 }
 .about-text p{
-    font-size: 25px;
+    font-size: 35px;
     padding: 0 5px;
+    
 }
 .mypic{
     padding: 0px;
@@ -52,15 +70,26 @@ body{
 }
 .myself{
     padding: 0 5px;
-    font-size: 25px;
-    color: white;
     margin-right: 30px;
+}
+.myself p{
+    color: #202b36;
+    font-size: 30px;
+}
+.download-btn{
+    border-color: rgb(10, 112, 130) !important;
+    font-size: 30px !important;
+}
+.download-btn a{
+    color: rgb(10, 112, 130) !important;
 }
 #skills{
     margin: 200px 0;
 }
 
 #skills h1{
+    font-size: 40px;
+    font-weight: bold;
     margin: 150px 0;
 }
 .python{
@@ -173,6 +202,11 @@ body{
     border-radius: 15px 15px 15px 15px;
     box-shadow: 2px 2px 4px 4px rgb(141, 99, 32);
 }
+#button{
+    background-color: transparent;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
 
 .pdc:hover{
     box-shadow: 2px 2px 4px 4px rgb(149, 127, 127);
@@ -203,6 +237,57 @@ body{
 placeholder{
     color: white;
 }
+/* .footer-card{
+    background-color: #19232d;
+    height: 100vh;
+} */
+.image{
+    width: 100px;
+    height: 47px;
+    transform: rotate(180deg);
+}
+.ima{
+    transform: rotate(90deg);
+}
+.icon{
+    padding: 15px;
+    font-size: 27px;
+    border-radius: 50%;
+    margin-right: 5px;
+    color: #5a7184;
+    background-color:  #202b36 ;
+}
+.c-icon{
+    color: #5a7184;
+    font-size: 23px;
+}
+p{
+    font-size: 25px;
+    color: #5a7184;
+}
+.text{
+    font-size: 15px;
+    color: #5a7184;
+}
+.hr{
+    height:2px;
+    border-width:0;
+    color:gray;
+    background-color:gray;
+}
+span{
+    font-size: 30px;
+}
+.aboutme, .text-cert, .text-contact{
+    font-size: 40px;
+    font-weight: bold;
+    color:#002C54 !important;
+}
+.text-gray{
+    font-size: 30px;
+    font-weight: bold;
+    color:#002C54 !important;
+}
 @media screen and (max-width: 576px){
     
     .text-link{
@@ -218,8 +303,8 @@ placeholder{
         padding: 3px 20px;
     }
     #about{
-        margin-top: -50px;
-        margin-bottom: 30px;
+        margin-top: -0px;
+        margin-bottom: 20px;
     }
     .about-text h1{
         font-size: 20px;
@@ -240,6 +325,13 @@ placeholder{
     #bio h1{
         font-size: 20px;
     }
+    #skills{
+        margin: 50px 0;
+    }
+    
+    #skills h1{
+        margin: 50px 0;
+    }
     .mypic{
         width: 150px;
         height: 150px;
@@ -250,15 +342,9 @@ placeholder{
         font-size: 13px;
         text-align: left;
     }
-    #skills{
-        margin: 25px 0;
-    }
     .skills-heading{
-        font-size: 20px;
-        margin-bottom: 18px;
-    }
-    #skills h1{
-        margin: 80px 0;
+        font-size: 25px;
+        margin-bottom: 0;
     }
     .python{
         width: 80px;
@@ -274,8 +360,7 @@ placeholder{
         margin-left: 22px;
     }
     .c-title{
-        font-size: 20px;
-        margin: 80px 0;
+        font-size: 28px;
     }
     .project-card{
         height: 350px;
@@ -309,5 +394,19 @@ placeholder{
     #h5{
         margin: 5px 0 !important;
         font-size: 15px;
+    }
+    .c-links{
+        font-size: 15px;
+    }
+    .myself p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .download-btn{
+        font-size: 20px !important;
+    }
+    .c-text{
+        font-size: 17px;
+        
     }
 }
