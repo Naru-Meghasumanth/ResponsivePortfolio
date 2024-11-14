@@ -339,11 +339,14 @@ span{
     }
     .myself{
         padding-left: 10px;
-        font-size: 13px;
+        font-size: 12px;
+    }
+    .detailsofme{
         text-align: left;
+        margin-right: -15px !important;
     }
     .skills-heading{
-        font-size: 25px;
+        font-size: 25px !important;
         margin-bottom: 0;
     }
     .python{
