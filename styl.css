@@ -74,7 +74,7 @@ body{
 }
 .myself p{
     color: #202b36;
-    font-size: 30px;
+    font-size: 25px;
 }
 .download-btn{
     border-color: rgb(10, 112, 130) !important;
@@ -278,6 +278,9 @@ p{
 span{
     font-size: 30px;
 }
+/* .detailsofme{
+    font-size: 25px;
+} */
 .aboutme, .text-cert, .text-contact{
     font-size: 40px;
     font-weight: bold;
@@ -287,6 +290,9 @@ span{
     font-size: 30px;
     font-weight: bold;
     color:#002C54 !important;
+}
+.c-text{
+    font-size: 16px;
 }
 @media screen and (max-width: 576px){
     
