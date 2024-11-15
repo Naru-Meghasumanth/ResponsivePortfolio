@@ -209,6 +209,10 @@ body{
     font-size: 25px;
     margin-bottom: 10px;
 }
+.download-btn a{
+    text-decoration: none;
+    backgrounf-color: transparent;
+}
 
 .pdc:hover{
     box-shadow: 2px 2px 4px 4px rgb(149, 127, 127);
