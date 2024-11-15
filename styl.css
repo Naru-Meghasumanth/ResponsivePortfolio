@@ -76,6 +76,9 @@ body{
     color: #202b36;
     font-size: 25px;
 }
+#w-text{
+    font-size: 25px !important;
+}
 .download-btn{
     border-color: rgb(10, 112, 130) !important;
     font-size: 30px !important;
