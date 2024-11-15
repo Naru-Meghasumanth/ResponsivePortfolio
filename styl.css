@@ -58,7 +58,7 @@ body{
     font-size: 40px;
 }
 .about-text p{
-    font-size: 35px;
+    font-size: 25px !important;
     padding: 0 5px;
     
 }
@@ -74,7 +74,7 @@ body{
 }
 .myself p{
     color: #202b36;
-    font-size: 25px;
+    font-size: 25px !important;
 }
 .download-btn{
     border-color: rgb(10, 112, 130) !important;
