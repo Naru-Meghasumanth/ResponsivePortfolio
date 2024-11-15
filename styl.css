@@ -79,11 +79,13 @@ body{
     font-size: 25px !important;
 }
 .download-btn{
-    border-color: rgb(10, 112, 130) !important;
+    /* border-color: rgb(10, 112, 130) !important; */
     font-size: 30px !important;
 }
 .download-btn a{
-    color: rgb(10, 112, 130) !important;
+    text-decoration: none !important;
+    background-color: transparent !important; 
+    /* color: rgb(10, 112, 130) !important; */
 }
 #skills{
     margin: 200px 0;
