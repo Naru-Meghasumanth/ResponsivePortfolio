@@ -58,9 +58,8 @@ body{
     font-size: 40px;
 }
 .about-text p{
-    font-size: 35px;
+    font-size: 25px !important;
     padding: 0 5px;
-    
 }
 .mypic{
     padding: 0px;
@@ -74,7 +73,7 @@ body{
 }
 .myself p{
     color: #202b36;
-    font-size: 25px;
+    font-size: 25px !important;
 }
 #w-text{
     font-size: 25px !important;
